@@ -1,0 +1,11 @@
+/gamos/random/setSeeds 1000 1000
+/gamos/setParam GmGeometryFromText:FileName 2100C_photons.geom
+/gamos/geometry GmGeometryFromText
+/gamos/physicsList GmEMPhysics
+/gamos/generator GmGenerator
+/run/initialize
+/gamos/generator/addSingleParticleSource mySource e- 6*MeV
+/gamos/generator/energyDist mySource GmGenerDistEnergyGaussian 6*MeV 0.127*MeV
+/gamos/generator/positionDist mySource GmGenerDistPositionDisc 0.5*mm 0.*mm 205.*mm 0*mm 0 1 0
+/gamos/generator/directionDist mySource GmGenerDistDirectionGaussian 0 1 0 0.003 0.003
+/control/execute movie.in

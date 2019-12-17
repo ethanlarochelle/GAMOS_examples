@@ -1,0 +1,1 @@
+For comparison to MCML, we performed simulations and recorded the internal fluence in the depth direction for a semi-infinite medium with a matched and mismatched refractive index boundary condition for the following optical properties: nrel = 1.0 or 1.37, absorption coefficient μa = 0.01 cm-1, scattering coefficient μs = 100 cm-1, and anisotropy factor g = 0.9.

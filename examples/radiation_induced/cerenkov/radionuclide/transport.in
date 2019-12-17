@@ -1,0 +1,44 @@
+/gamos/random/setSeeds 1000 1000
+
+/gamos/setParam GmGeometryFromText:FileName world.geom
+/gamos/geometry GmGeometryFromText
+
+/gamos/physicsList GmEMPhysics
+
+/gamos/generator GmGenerator
+/run/initialize
+/gamos/generator/addIsotopeSource MySource F18 1000000
+/gamos/generator/positionDist MySource GmGenerDistPositionInUserVolumes 0. 0. 0.75*cm 0. 0. 0. ORB 0.25*cm
+
+/gamos/setParam G4OpTissueFluor:Method interpolate
+/gamos/setParam G4OpTissueFluor:FileName spectrum.txt
+/gamos/setParam G4OpTissueFluor:TimeProfile exponential
+/gamos/physics/addPhysics tissue-optics
+/gamos/setParam GmPhysicsCerenkov:MaxNumPhotonsPerStep 100.
+/gamos/setParam GmPhysicsCerenkov:TrackSecondariesFirst 1
+/gamos/setParam G4OpCerenkov:Method interpolate
+/gamos/physics/addPhysics cerenkov
+
+/gamos/filter det_filt GmEnterLogicalVolumeFilter detector
+/gamos/filter opt_filt GmStringDataFilter Particle opticalphoton
+/gamos/filter cer_filt GmStringDataFilter CreatorProcess Cerenkov
+/gamos/filter fluor_filt GmStringDataFilter CreatorProcess OpTissueFluor
+
+/gamos/filter f1 GmANDFilter det_filt opt_filt
+/gamos/filter f2 GmANDFilter det_filt opt_filt
+/gamos/filter f3 GmANDFilter f1 cer_filt
+/gamos/filter f4 GmANDFilter f2 fluor_filt
+
+/gamos/userAction GmStepDataTextFileUA f3
+/gamos/setParam GmStepDataTextFileUA_f3:DataList InitialPosX InitialPosY InitialDirZ InitialTime*ns WavelengthEnergy*nm
+/gamos/setParam GmStepDataTextFileUA_f3:FileName cerenkov_reflectance.txt
+
+/gamos/userAction GmStepDataTextFileUA f4
+/gamos/setParam GmStepDataTextFileUA_f4:DataList InitialPosX InitialPosY InitialDirZ InitialTime*ns WavelengthEnergy*nm
+/gamos/setParam GmStepDataTextFileUA_f4:FileName fluor_reflectance.txt
+
+/gamos/userAction GmCountProcessesUA
+/gamos/userAction GmCountTracksUA
+/gamos/setParam GmCountTracksUA:EachNEvent 1000
+
+/run/beamOn 10000 

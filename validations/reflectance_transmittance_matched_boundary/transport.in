@@ -1,0 +1,31 @@
+/gamos/random/setSeeds 1000 1000
+/gamos/setParam GmAnalysisMgr:FileNameSuffix _test
+/gamos/setParam GmGeometryFromText:FileName world.geom
+/gamos/geometry GmGeometryFromText
+
+/gamos/physicsList GmEMPhysics
+
+/gamos/generator GmGenerator
+/run/initialize
+/gamos/generator/addSingleParticleSource MySource opticalphoton 600*wvnm
+/gamos/generator/positionDist MySource GmGenerDistPositionPoint 0.*mm 0.*mm 0.1*mm
+/gamos/generator/directionDist MySource GmGenerDistDirectionConst 0. 0. -1.
+
+/gamos/physics/addPhysics tissue-optics
+
+/gamos/filter f1 GmEnterLogicalVolumeFilter reflectance
+/gamos/userAction GmStepDataTextFileUA f1
+/gamos/setParam GmStepDataTextFileUA_f1:DataList FinalPosX FinalPosY FinalPosZ
+/gamos/setParam GmStepDataTextFileUA_f1:FileName reflectance.txt
+
+/gamos/filter f2 GmEnterLogicalVolumeFilter transmission
+/gamos/userAction GmStepDataTextFileUA f2
+/gamos/setParam GmStepDataTextFileUA_f2:DataList FinalPosX FinalPosY FinalPosZ
+/gamos/setParam GmStepDataTextFileUA_f2:FileName transmission.txt
+
+/gamos/userAction GmCountProcessesUA
+/gamos/userAction GmCountTracksUA
+/gamos/setParam GmCountTracksUA:EachNEvent 10000
+
+/run/beamOn 1000000
+

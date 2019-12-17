@@ -1,0 +1,1 @@
+This example reproduces Lambertian angular reflection from a planar surface.

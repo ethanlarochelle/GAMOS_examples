@@ -1,0 +1,47 @@
+# Open OGL window
+/vis/open OGL 600x600-0+0
+
+# Disable auto refresh and quieten vis messages whilst scene and
+# trajectories are established:
+/vis/viewer/set/autoRefresh false
+/vis/drawVolume
+/vis/scene/add/trajectories rich smooth
+/vis/scene/endOfEventAction accumulate -1
+/vis/ogl/set/displayListLimit 1000000000
+
+# Add extras to scene
+/vis/ogl/set/fade 1
+/vis/viewer/set/globalLineWidthScale 1
+/vis/viewer/set/style wireframe
+/vis/viewer/set/defaultTextColour 0. 0. 0. 1.
+/vis/viewer/set/defaultColour 0.5 0.5 0.5 1.0
+/vis/viewer/set/background 1. 1. 1. 1.
+/vis/viewer/set/hiddenEdge 0
+/vis/viewer/set/auxiliaryEdge 0
+/vis/viewer/set/lineSegmentsPerCircle 45
+
+# Set up Cerenkov Energy Visualization with time slicing
+/vis/modeling/trajectories/create/drawByParticleID traj1
+/vis/modeling/trajectories/traj1/set e- green
+/vis/modeling/trajectories/traj1/set gamma red
+/vis/modeling/trajectories/traj1/set opticalphoton blue
+/vis/modeling/trajectories/traj1/set e+ magenta
+/vis/modeling/trajectories/traj1/default/setTimeSliceInterval 0.0016 ns
+/vis/filtering/trajectories/create/particleFilter
+/vis/filtering/trajectories/particleFilter-0/add e-
+/vis/filtering/trajectories/particleFilter-0/add gamma 
+/vis/filtering/trajectories/particleFilter-0/add e+
+/vis/modeling/trajectories/list
+
+# Display time slices
+/vis/viewer/set/projection perspective 20
+/vis/viewer/set/viewpointThetaPhi 40 25
+#/control/alias timeRange 0.4
+/control/alias timeRange 4.0
+/control/alias dz 1
+/control/alias dx 0.0002
+/vis/viewer/zoomTo 1
+#/vis/viewer/flush
+#Create trajectories
+/run/beamOn 1000
+#/control/loop movie.loop endTime 0 8.0 0.016

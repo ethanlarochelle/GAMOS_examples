@@ -1,0 +1,806 @@
+/vis/open OGL 600x600-0+0
+
+/vis/viewer/set/autoRefresh false
+/vis/drawVolume
+/vis/scene/add/trajectories rich smooth
+/vis/scene/endOfEventAction accumulate -1
+/vis/ogl/set/displayListLimit 1000000000
+
+/vis/scene/add/eventID 12 
+/vis/ogl/set/fade 1
+/vis/ogl/set/displayHeadTime true 
+/vis/viewer/set/globalLineWidthScale 2
+/vis/viewer/set/style wireframe #surface
+/vis/viewer/set/defaultTextColour 1. 1. 1. 0.0
+/vis/viewer/set/defaultColour 1.0 1.0 1.0 0.0
+/vis/viewer/set/background 0. 0. 0. 0.
+
+/vis/modeling/trajectories/create/drawByAttribute trajectories
+/vis/modeling/trajectories/trajectories/setAttribute IMag
+/vis/modeling/trajectories/trajectories/addInterval interval1 1.60 eV 1.656 eV
+/vis/modeling/trajectories/trajectories/interval1/setLineColourRGBA 1.000 0.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval1/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval2 1.656 eV 1.658 eV
+/vis/modeling/trajectories/trajectories/interval2/setLineColourRGBA 1.000 0.021 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval2/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval3 1.658 eV 1.661 eV
+/vis/modeling/trajectories/trajectories/interval3/setLineColourRGBA 1.000 0.041 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval3/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval4 1.661 eV 1.664 eV
+/vis/modeling/trajectories/trajectories/interval4/setLineColourRGBA 1.000 0.062 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval4/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval5 1.664 eV 1.666 eV
+/vis/modeling/trajectories/trajectories/interval5/setLineColourRGBA 1.000 0.082 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval5/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval6 1.666 eV 1.669 eV
+/vis/modeling/trajectories/trajectories/interval6/setLineColourRGBA 1.000 0.103 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval6/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval7 1.669 eV 1.671 eV
+/vis/modeling/trajectories/trajectories/interval7/setLineColourRGBA 1.000 0.123 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval7/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval8 1.671 eV 1.674 eV
+/vis/modeling/trajectories/trajectories/interval8/setLineColourRGBA 1.000 0.144 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval8/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval9 1.674 eV 1.677 eV
+/vis/modeling/trajectories/trajectories/interval9/setLineColourRGBA 1.000 0.164 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval9/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval10 1.677 eV 1.679 eV
+/vis/modeling/trajectories/trajectories/interval10/setLineColourRGBA 1.000 0.185 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval10/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval11 1.679 eV 1.682 eV
+/vis/modeling/trajectories/trajectories/interval11/setLineColourRGBA 1.000 0.205 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval11/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval12 1.682 eV 1.685 eV
+/vis/modeling/trajectories/trajectories/interval12/setLineColourRGBA 1.000 0.226 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval12/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval13 1.685 eV 1.688 eV
+/vis/modeling/trajectories/trajectories/interval13/setLineColourRGBA 1.000 0.246 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval13/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval14 1.688 eV 1.690 eV
+/vis/modeling/trajectories/trajectories/interval14/setLineColourRGBA 1.000 0.267 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval14/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval15 1.690 eV 1.693 eV
+/vis/modeling/trajectories/trajectories/interval15/setLineColourRGBA 1.000 0.287 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval15/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval16 1.693 eV 1.696 eV
+/vis/modeling/trajectories/trajectories/interval16/setLineColourRGBA 1.000 0.308 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval16/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval17 1.696 eV 1.698 eV
+/vis/modeling/trajectories/trajectories/interval17/setLineColourRGBA 1.000 0.328 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval17/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval18 1.698 eV 1.701 eV
+/vis/modeling/trajectories/trajectories/interval18/setLineColourRGBA 1.000 0.349 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval18/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval19 1.701 eV 1.704 eV
+/vis/modeling/trajectories/trajectories/interval19/setLineColourRGBA 1.000 0.369 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval19/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval20 1.704 eV 1.707 eV
+/vis/modeling/trajectories/trajectories/interval20/setLineColourRGBA 1.000 0.390 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval20/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval21 1.707 eV 1.709 eV
+/vis/modeling/trajectories/trajectories/interval21/setLineColourRGBA 1.000 0.410 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval21/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval22 1.709 eV 1.712 eV
+/vis/modeling/trajectories/trajectories/interval22/setLineColourRGBA 1.000 0.431 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval22/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval23 1.712 eV 1.715 eV
+/vis/modeling/trajectories/trajectories/interval23/setLineColourRGBA 1.000 0.451 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval23/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval24 1.715 eV 1.718 eV
+/vis/modeling/trajectories/trajectories/interval24/setLineColourRGBA 1.000 0.472 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval24/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval25 1.718 eV 1.721 eV
+/vis/modeling/trajectories/trajectories/interval25/setLineColourRGBA 1.000 0.492 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval25/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval26 1.721 eV 1.723 eV
+/vis/modeling/trajectories/trajectories/interval26/setLineColourRGBA 1.000 0.513 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval26/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval27 1.723 eV 1.726 eV
+/vis/modeling/trajectories/trajectories/interval27/setLineColourRGBA 1.000 0.533 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval27/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval28 1.726 eV 1.729 eV
+/vis/modeling/trajectories/trajectories/interval28/setLineColourRGBA 1.000 0.554 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval28/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval29 1.729 eV 1.732 eV
+/vis/modeling/trajectories/trajectories/interval29/setLineColourRGBA 1.000 0.574 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval29/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval30 1.732 eV 1.735 eV
+/vis/modeling/trajectories/trajectories/interval30/setLineColourRGBA 1.000 0.595 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval30/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval31 1.735 eV 1.738 eV
+/vis/modeling/trajectories/trajectories/interval31/setLineColourRGBA 1.000 0.615 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval31/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval32 1.738 eV 1.740 eV
+/vis/modeling/trajectories/trajectories/interval32/setLineColourRGBA 1.000 0.636 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval32/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval33 1.740 eV 1.743 eV
+/vis/modeling/trajectories/trajectories/interval33/setLineColourRGBA 1.000 0.656 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval33/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval34 1.743 eV 1.746 eV
+/vis/modeling/trajectories/trajectories/interval34/setLineColourRGBA 1.000 0.677 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval34/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval35 1.746 eV 1.749 eV
+/vis/modeling/trajectories/trajectories/interval35/setLineColourRGBA 1.000 0.697 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval35/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval36 1.749 eV 1.752 eV
+/vis/modeling/trajectories/trajectories/interval36/setLineColourRGBA 1.000 0.718 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval36/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval37 1.752 eV 1.755 eV
+/vis/modeling/trajectories/trajectories/interval37/setLineColourRGBA 1.000 0.738 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval37/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval38 1.755 eV 1.758 eV
+/vis/modeling/trajectories/trajectories/interval38/setLineColourRGBA 1.000 0.759 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval38/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval39 1.758 eV 1.761 eV
+/vis/modeling/trajectories/trajectories/interval39/setLineColourRGBA 1.000 0.779 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval39/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval40 1.761 eV 1.764 eV
+/vis/modeling/trajectories/trajectories/interval40/setLineColourRGBA 1.000 0.800 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval40/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval41 1.764 eV 1.767 eV
+/vis/modeling/trajectories/trajectories/interval41/setLineColourRGBA 1.000 0.820 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval41/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval42 1.767 eV 1.770 eV
+/vis/modeling/trajectories/trajectories/interval42/setLineColourRGBA 1.000 0.841 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval42/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval43 1.770 eV 1.773 eV
+/vis/modeling/trajectories/trajectories/interval43/setLineColourRGBA 1.000 0.861 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval43/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval44 1.773 eV 1.776 eV
+/vis/modeling/trajectories/trajectories/interval44/setLineColourRGBA 1.000 0.882 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval44/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval45 1.776 eV 1.779 eV
+/vis/modeling/trajectories/trajectories/interval45/setLineColourRGBA 1.000 0.902 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval45/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval46 1.779 eV 1.782 eV
+/vis/modeling/trajectories/trajectories/interval46/setLineColourRGBA 1.000 0.923 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval46/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval47 1.782 eV 1.785 eV
+/vis/modeling/trajectories/trajectories/interval47/setLineColourRGBA 1.000 0.943 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval47/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval48 1.785 eV 1.788 eV
+/vis/modeling/trajectories/trajectories/interval48/setLineColourRGBA 1.000 0.964 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval48/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval49 1.788 eV 1.791 eV
+/vis/modeling/trajectories/trajectories/interval49/setLineColourRGBA 1.000 0.984 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval49/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval50 1.791 eV 1.794 eV
+/vis/modeling/trajectories/trajectories/interval50/setLineColourRGBA 0.995 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval50/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval51 1.794 eV 1.797 eV
+/vis/modeling/trajectories/trajectories/interval51/setLineColourRGBA 0.975 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval51/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval52 1.797 eV 1.800 eV
+/vis/modeling/trajectories/trajectories/interval52/setLineColourRGBA 0.954 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval52/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval53 1.800 eV 1.803 eV
+/vis/modeling/trajectories/trajectories/interval53/setLineColourRGBA 0.934 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval53/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval54 1.803 eV 1.806 eV
+/vis/modeling/trajectories/trajectories/interval54/setLineColourRGBA 0.913 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval54/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval55 1.806 eV 1.809 eV
+/vis/modeling/trajectories/trajectories/interval55/setLineColourRGBA 0.893 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval55/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval56 1.809 eV 1.812 eV
+/vis/modeling/trajectories/trajectories/interval56/setLineColourRGBA 0.872 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval56/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval57 1.812 eV 1.815 eV
+/vis/modeling/trajectories/trajectories/interval57/setLineColourRGBA 0.852 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval57/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval58 1.815 eV 1.819 eV
+/vis/modeling/trajectories/trajectories/interval58/setLineColourRGBA 0.831 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval58/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval59 1.819 eV 1.822 eV
+/vis/modeling/trajectories/trajectories/interval59/setLineColourRGBA 0.811 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval59/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval60 1.822 eV 1.825 eV
+/vis/modeling/trajectories/trajectories/interval60/setLineColourRGBA 0.790 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval60/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval61 1.825 eV 1.828 eV
+/vis/modeling/trajectories/trajectories/interval61/setLineColourRGBA 0.770 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval61/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval62 1.828 eV 1.831 eV
+/vis/modeling/trajectories/trajectories/interval62/setLineColourRGBA 0.749 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval62/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval63 1.831 eV 1.834 eV
+/vis/modeling/trajectories/trajectories/interval63/setLineColourRGBA 0.729 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval63/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval64 1.834 eV 1.838 eV
+/vis/modeling/trajectories/trajectories/interval64/setLineColourRGBA 0.708 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval64/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval65 1.838 eV 1.841 eV
+/vis/modeling/trajectories/trajectories/interval65/setLineColourRGBA 0.688 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval65/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval66 1.841 eV 1.844 eV
+/vis/modeling/trajectories/trajectories/interval66/setLineColourRGBA 0.667 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval66/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval67 1.844 eV 1.847 eV
+/vis/modeling/trajectories/trajectories/interval67/setLineColourRGBA 0.646 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval67/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval68 1.847 eV 1.851 eV
+/vis/modeling/trajectories/trajectories/interval68/setLineColourRGBA 0.626 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval68/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval69 1.851 eV 1.854 eV
+/vis/modeling/trajectories/trajectories/interval69/setLineColourRGBA 0.605 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval69/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval70 1.854 eV 1.857 eV
+/vis/modeling/trajectories/trajectories/interval70/setLineColourRGBA 0.585 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval70/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval71 1.857 eV 1.860 eV
+/vis/modeling/trajectories/trajectories/interval71/setLineColourRGBA 0.564 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval71/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval72 1.860 eV 1.864 eV
+/vis/modeling/trajectories/trajectories/interval72/setLineColourRGBA 0.544 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval72/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval73 1.864 eV 1.867 eV
+/vis/modeling/trajectories/trajectories/interval73/setLineColourRGBA 0.523 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval73/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval74 1.867 eV 1.870 eV
+/vis/modeling/trajectories/trajectories/interval74/setLineColourRGBA 0.503 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval74/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval75 1.870 eV 1.874 eV
+/vis/modeling/trajectories/trajectories/interval75/setLineColourRGBA 0.482 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval75/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval76 1.874 eV 1.877 eV
+/vis/modeling/trajectories/trajectories/interval76/setLineColourRGBA 0.462 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval76/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval77 1.877 eV 1.880 eV
+/vis/modeling/trajectories/trajectories/interval77/setLineColourRGBA 0.441 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval77/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval78 1.880 eV 1.884 eV
+/vis/modeling/trajectories/trajectories/interval78/setLineColourRGBA 0.421 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval78/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval79 1.884 eV 1.887 eV
+/vis/modeling/trajectories/trajectories/interval79/setLineColourRGBA 0.400 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval79/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval80 1.887 eV 1.890 eV
+/vis/modeling/trajectories/trajectories/interval80/setLineColourRGBA 0.380 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval80/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval81 1.890 eV 1.894 eV
+/vis/modeling/trajectories/trajectories/interval81/setLineColourRGBA 0.359 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval81/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval82 1.894 eV 1.897 eV
+/vis/modeling/trajectories/trajectories/interval82/setLineColourRGBA 0.339 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval82/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval83 1.897 eV 1.901 eV
+/vis/modeling/trajectories/trajectories/interval83/setLineColourRGBA 0.318 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval83/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval84 1.901 eV 1.904 eV
+/vis/modeling/trajectories/trajectories/interval84/setLineColourRGBA 0.298 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval84/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval85 1.904 eV 1.907 eV
+/vis/modeling/trajectories/trajectories/interval85/setLineColourRGBA 0.277 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval85/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval86 1.907 eV 1.911 eV
+/vis/modeling/trajectories/trajectories/interval86/setLineColourRGBA 0.257 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval86/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval87 1.911 eV 1.914 eV
+/vis/modeling/trajectories/trajectories/interval87/setLineColourRGBA 0.236 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval87/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval88 1.914 eV 1.918 eV
+/vis/modeling/trajectories/trajectories/interval88/setLineColourRGBA 0.216 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval88/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval89 1.918 eV 1.921 eV
+/vis/modeling/trajectories/trajectories/interval89/setLineColourRGBA 0.195 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval89/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval90 1.921 eV 1.925 eV
+/vis/modeling/trajectories/trajectories/interval90/setLineColourRGBA 0.175 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval90/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval91 1.925 eV 1.928 eV
+/vis/modeling/trajectories/trajectories/interval91/setLineColourRGBA 0.154 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval91/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval92 1.928 eV 1.932 eV
+/vis/modeling/trajectories/trajectories/interval92/setLineColourRGBA 0.134 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval92/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval93 1.932 eV 1.935 eV
+/vis/modeling/trajectories/trajectories/interval93/setLineColourRGBA 0.113 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval93/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval94 1.935 eV 1.939 eV
+/vis/modeling/trajectories/trajectories/interval94/setLineColourRGBA 0.093 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval94/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval95 1.939 eV 1.943 eV
+/vis/modeling/trajectories/trajectories/interval95/setLineColourRGBA 0.072 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval95/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval96 1.943 eV 1.946 eV
+/vis/modeling/trajectories/trajectories/interval96/setLineColourRGBA 0.052 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval96/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval97 1.946 eV 1.950 eV
+/vis/modeling/trajectories/trajectories/interval97/setLineColourRGBA 0.031 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval97/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval98 1.950 eV 1.953 eV
+/vis/modeling/trajectories/trajectories/interval98/setLineColourRGBA 0.011 1.000 0.000 1.0
+/vis/modeling/trajectories/trajectories/interval98/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval99 1.953 eV 1.957 eV
+/vis/modeling/trajectories/trajectories/interval99/setLineColourRGBA 0.000 1.000 0.010 1.0
+/vis/modeling/trajectories/trajectories/interval99/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval100 1.957 eV 1.961 eV
+/vis/modeling/trajectories/trajectories/interval100/setLineColourRGBA 0.000 1.000 0.030 1.0
+/vis/modeling/trajectories/trajectories/interval100/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval101 1.961 eV 1.964 eV
+/vis/modeling/trajectories/trajectories/interval101/setLineColourRGBA 0.000 1.000 0.051 1.0
+/vis/modeling/trajectories/trajectories/interval101/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval102 1.964 eV 1.968 eV
+/vis/modeling/trajectories/trajectories/interval102/setLineColourRGBA 0.000 1.000 0.071 1.0
+/vis/modeling/trajectories/trajectories/interval102/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval103 1.968 eV 1.972 eV
+/vis/modeling/trajectories/trajectories/interval103/setLineColourRGBA 0.000 1.000 0.092 1.0
+/vis/modeling/trajectories/trajectories/interval103/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval104 1.972 eV 1.975 eV
+/vis/modeling/trajectories/trajectories/interval104/setLineColourRGBA 0.000 1.000 0.112 1.0
+/vis/modeling/trajectories/trajectories/interval104/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval105 1.975 eV 1.979 eV
+/vis/modeling/trajectories/trajectories/interval105/setLineColourRGBA 0.000 1.000 0.133 1.0
+/vis/modeling/trajectories/trajectories/interval105/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval106 1.979 eV 1.983 eV
+/vis/modeling/trajectories/trajectories/interval106/setLineColourRGBA 0.000 1.000 0.153 1.0
+/vis/modeling/trajectories/trajectories/interval106/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval107 1.983 eV 1.987 eV
+/vis/modeling/trajectories/trajectories/interval107/setLineColourRGBA 0.000 1.000 0.174 1.0
+/vis/modeling/trajectories/trajectories/interval107/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval108 1.987 eV 1.990 eV
+/vis/modeling/trajectories/trajectories/interval108/setLineColourRGBA 0.000 1.000 0.194 1.0
+/vis/modeling/trajectories/trajectories/interval108/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval109 1.990 eV 1.994 eV
+/vis/modeling/trajectories/trajectories/interval109/setLineColourRGBA 0.000 1.000 0.215 1.0
+/vis/modeling/trajectories/trajectories/interval109/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval110 1.994 eV 1.998 eV
+/vis/modeling/trajectories/trajectories/interval110/setLineColourRGBA 0.000 1.000 0.235 1.0
+/vis/modeling/trajectories/trajectories/interval110/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval111 1.998 eV 2.002 eV
+/vis/modeling/trajectories/trajectories/interval111/setLineColourRGBA 0.000 1.000 0.256 1.0
+/vis/modeling/trajectories/trajectories/interval111/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval112 2.002 eV 2.005 eV
+/vis/modeling/trajectories/trajectories/interval112/setLineColourRGBA 0.000 1.000 0.276 1.0
+/vis/modeling/trajectories/trajectories/interval112/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval113 2.005 eV 2.009 eV
+/vis/modeling/trajectories/trajectories/interval113/setLineColourRGBA 0.000 1.000 0.297 1.0
+/vis/modeling/trajectories/trajectories/interval113/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval114 2.009 eV 2.013 eV
+/vis/modeling/trajectories/trajectories/interval114/setLineColourRGBA 0.000 1.000 0.317 1.0
+/vis/modeling/trajectories/trajectories/interval114/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval115 2.013 eV 2.017 eV
+/vis/modeling/trajectories/trajectories/interval115/setLineColourRGBA 0.000 1.000 0.338 1.0
+/vis/modeling/trajectories/trajectories/interval115/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval116 2.017 eV 2.021 eV
+/vis/modeling/trajectories/trajectories/interval116/setLineColourRGBA 0.000 1.000 0.358 1.0
+/vis/modeling/trajectories/trajectories/interval116/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval117 2.021 eV 2.025 eV
+/vis/modeling/trajectories/trajectories/interval117/setLineColourRGBA 0.000 1.000 0.379 1.0
+/vis/modeling/trajectories/trajectories/interval117/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval118 2.025 eV 2.029 eV
+/vis/modeling/trajectories/trajectories/interval118/setLineColourRGBA 0.000 1.000 0.399 1.0
+/vis/modeling/trajectories/trajectories/interval118/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval119 2.029 eV 2.033 eV
+/vis/modeling/trajectories/trajectories/interval119/setLineColourRGBA 0.000 1.000 0.420 1.0
+/vis/modeling/trajectories/trajectories/interval119/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval120 2.033 eV 2.036 eV
+/vis/modeling/trajectories/trajectories/interval120/setLineColourRGBA 0.000 1.000 0.440 1.0
+/vis/modeling/trajectories/trajectories/interval120/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval121 2.036 eV 2.040 eV
+/vis/modeling/trajectories/trajectories/interval121/setLineColourRGBA 0.000 1.000 0.461 1.0
+/vis/modeling/trajectories/trajectories/interval121/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval122 2.040 eV 2.044 eV
+/vis/modeling/trajectories/trajectories/interval122/setLineColourRGBA 0.000 1.000 0.481 1.0
+/vis/modeling/trajectories/trajectories/interval122/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval123 2.044 eV 2.048 eV
+/vis/modeling/trajectories/trajectories/interval123/setLineColourRGBA 0.000 1.000 0.502 1.0
+/vis/modeling/trajectories/trajectories/interval123/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval124 2.048 eV 2.052 eV
+/vis/modeling/trajectories/trajectories/interval124/setLineColourRGBA 0.000 1.000 0.522 1.0
+/vis/modeling/trajectories/trajectories/interval124/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval125 2.052 eV 2.056 eV
+/vis/modeling/trajectories/trajectories/interval125/setLineColourRGBA 0.000 1.000 0.543 1.0
+/vis/modeling/trajectories/trajectories/interval125/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval126 2.056 eV 2.060 eV
+/vis/modeling/trajectories/trajectories/interval126/setLineColourRGBA 0.000 1.000 0.563 1.0
+/vis/modeling/trajectories/trajectories/interval126/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval127 2.060 eV 2.064 eV
+/vis/modeling/trajectories/trajectories/interval127/setLineColourRGBA 0.000 1.000 0.584 1.0
+/vis/modeling/trajectories/trajectories/interval127/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval128 2.064 eV 2.068 eV
+/vis/modeling/trajectories/trajectories/interval128/setLineColourRGBA 0.000 1.000 0.604 1.0
+/vis/modeling/trajectories/trajectories/interval128/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval129 2.068 eV 2.072 eV
+/vis/modeling/trajectories/trajectories/interval129/setLineColourRGBA 0.000 1.000 0.625 1.0
+/vis/modeling/trajectories/trajectories/interval129/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval130 2.072 eV 2.077 eV
+/vis/modeling/trajectories/trajectories/interval130/setLineColourRGBA 0.000 1.000 0.646 1.0
+/vis/modeling/trajectories/trajectories/interval130/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval131 2.077 eV 2.081 eV
+/vis/modeling/trajectories/trajectories/interval131/setLineColourRGBA 0.000 1.000 0.666 1.0
+/vis/modeling/trajectories/trajectories/interval131/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval132 2.081 eV 2.085 eV
+/vis/modeling/trajectories/trajectories/interval132/setLineColourRGBA 0.000 1.000 0.687 1.0
+/vis/modeling/trajectories/trajectories/interval132/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval133 2.085 eV 2.089 eV
+/vis/modeling/trajectories/trajectories/interval133/setLineColourRGBA 0.000 1.000 0.707 1.0
+/vis/modeling/trajectories/trajectories/interval133/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval134 2.089 eV 2.093 eV
+/vis/modeling/trajectories/trajectories/interval134/setLineColourRGBA 0.000 1.000 0.728 1.0
+/vis/modeling/trajectories/trajectories/interval134/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval135 2.093 eV 2.097 eV
+/vis/modeling/trajectories/trajectories/interval135/setLineColourRGBA 0.000 1.000 0.748 1.0
+/vis/modeling/trajectories/trajectories/interval135/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval136 2.097 eV 2.101 eV
+/vis/modeling/trajectories/trajectories/interval136/setLineColourRGBA 0.000 1.000 0.769 1.0
+/vis/modeling/trajectories/trajectories/interval136/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval137 2.101 eV 2.106 eV
+/vis/modeling/trajectories/trajectories/interval137/setLineColourRGBA 0.000 1.000 0.789 1.0
+/vis/modeling/trajectories/trajectories/interval137/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval138 2.106 eV 2.110 eV
+/vis/modeling/trajectories/trajectories/interval138/setLineColourRGBA 0.000 1.000 0.810 1.0
+/vis/modeling/trajectories/trajectories/interval138/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval139 2.110 eV 2.114 eV
+/vis/modeling/trajectories/trajectories/interval139/setLineColourRGBA 0.000 1.000 0.830 1.0
+/vis/modeling/trajectories/trajectories/interval139/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval140 2.114 eV 2.118 eV
+/vis/modeling/trajectories/trajectories/interval140/setLineColourRGBA 0.000 1.000 0.851 1.0
+/vis/modeling/trajectories/trajectories/interval140/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval141 2.118 eV 2.123 eV
+/vis/modeling/trajectories/trajectories/interval141/setLineColourRGBA 0.000 1.000 0.871 1.0
+/vis/modeling/trajectories/trajectories/interval141/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval142 2.123 eV 2.127 eV
+/vis/modeling/trajectories/trajectories/interval142/setLineColourRGBA 0.000 1.000 0.892 1.0
+/vis/modeling/trajectories/trajectories/interval142/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval143 2.127 eV 2.131 eV
+/vis/modeling/trajectories/trajectories/interval143/setLineColourRGBA 0.000 1.000 0.912 1.0
+/vis/modeling/trajectories/trajectories/interval143/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval144 2.131 eV 2.135 eV
+/vis/modeling/trajectories/trajectories/interval144/setLineColourRGBA 0.000 1.000 0.933 1.0
+/vis/modeling/trajectories/trajectories/interval144/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval145 2.135 eV 2.140 eV
+/vis/modeling/trajectories/trajectories/interval145/setLineColourRGBA 0.000 1.000 0.953 1.0
+/vis/modeling/trajectories/trajectories/interval145/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval146 2.140 eV 2.144 eV
+/vis/modeling/trajectories/trajectories/interval146/setLineColourRGBA 0.000 1.000 0.974 1.0
+/vis/modeling/trajectories/trajectories/interval146/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval147 2.144 eV 2.149 eV
+/vis/modeling/trajectories/trajectories/interval147/setLineColourRGBA 0.000 1.000 0.994 1.0
+/vis/modeling/trajectories/trajectories/interval147/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval148 2.149 eV 2.153 eV
+/vis/modeling/trajectories/trajectories/interval148/setLineColourRGBA 0.000 0.985 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval148/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval149 2.153 eV 2.157 eV
+/vis/modeling/trajectories/trajectories/interval149/setLineColourRGBA 0.000 0.965 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval149/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval150 2.157 eV 2.162 eV
+/vis/modeling/trajectories/trajectories/interval150/setLineColourRGBA 0.000 0.944 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval150/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval151 2.162 eV 2.166 eV
+/vis/modeling/trajectories/trajectories/interval151/setLineColourRGBA 0.000 0.924 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval151/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval152 2.166 eV 2.171 eV
+/vis/modeling/trajectories/trajectories/interval152/setLineColourRGBA 0.000 0.903 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval152/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval153 2.171 eV 2.175 eV
+/vis/modeling/trajectories/trajectories/interval153/setLineColourRGBA 0.000 0.883 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval153/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval154 2.175 eV 2.180 eV
+/vis/modeling/trajectories/trajectories/interval154/setLineColourRGBA 0.000 0.862 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval154/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval155 2.180 eV 2.184 eV
+/vis/modeling/trajectories/trajectories/interval155/setLineColourRGBA 0.000 0.842 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval155/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval156 2.184 eV 2.189 eV
+/vis/modeling/trajectories/trajectories/interval156/setLineColourRGBA 0.000 0.821 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval156/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval157 2.189 eV 2.193 eV
+/vis/modeling/trajectories/trajectories/interval157/setLineColourRGBA 0.000 0.801 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval157/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval158 2.193 eV 2.198 eV
+/vis/modeling/trajectories/trajectories/interval158/setLineColourRGBA 0.000 0.780 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval158/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval159 2.198 eV 2.202 eV
+/vis/modeling/trajectories/trajectories/interval159/setLineColourRGBA 0.000 0.760 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval159/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval160 2.202 eV 2.207 eV
+/vis/modeling/trajectories/trajectories/interval160/setLineColourRGBA 0.000 0.739 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval160/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval161 2.207 eV 2.212 eV
+/vis/modeling/trajectories/trajectories/interval161/setLineColourRGBA 0.000 0.719 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval161/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval162 2.212 eV 2.216 eV
+/vis/modeling/trajectories/trajectories/interval162/setLineColourRGBA 0.000 0.698 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval162/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval163 2.216 eV 2.221 eV
+/vis/modeling/trajectories/trajectories/interval163/setLineColourRGBA 0.000 0.678 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval163/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval164 2.221 eV 2.226 eV
+/vis/modeling/trajectories/trajectories/interval164/setLineColourRGBA 0.000 0.657 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval164/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval165 2.226 eV 2.230 eV
+/vis/modeling/trajectories/trajectories/interval165/setLineColourRGBA 0.000 0.637 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval165/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval166 2.230 eV 2.235 eV
+/vis/modeling/trajectories/trajectories/interval166/setLineColourRGBA 0.000 0.616 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval166/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval167 2.235 eV 2.240 eV
+/vis/modeling/trajectories/trajectories/interval167/setLineColourRGBA 0.000 0.596 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval167/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval168 2.240 eV 2.245 eV
+/vis/modeling/trajectories/trajectories/interval168/setLineColourRGBA 0.000 0.575 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval168/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval169 2.245 eV 2.249 eV
+/vis/modeling/trajectories/trajectories/interval169/setLineColourRGBA 0.000 0.555 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval169/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval170 2.249 eV 2.254 eV
+/vis/modeling/trajectories/trajectories/interval170/setLineColourRGBA 0.000 0.534 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval170/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval171 2.254 eV 2.259 eV
+/vis/modeling/trajectories/trajectories/interval171/setLineColourRGBA 0.000 0.514 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval171/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval172 2.259 eV 2.264 eV
+/vis/modeling/trajectories/trajectories/interval172/setLineColourRGBA 0.000 0.493 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval172/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval173 2.264 eV 2.269 eV
+/vis/modeling/trajectories/trajectories/interval173/setLineColourRGBA 0.000 0.473 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval173/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval174 2.269 eV 2.274 eV
+/vis/modeling/trajectories/trajectories/interval174/setLineColourRGBA 0.000 0.452 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval174/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval175 2.274 eV 2.279 eV
+/vis/modeling/trajectories/trajectories/interval175/setLineColourRGBA 0.000 0.432 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval175/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval176 2.279 eV 2.284 eV
+/vis/modeling/trajectories/trajectories/interval176/setLineColourRGBA 0.000 0.411 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval176/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval177 2.284 eV 2.289 eV
+/vis/modeling/trajectories/trajectories/interval177/setLineColourRGBA 0.000 0.391 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval177/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval178 2.289 eV 2.294 eV
+/vis/modeling/trajectories/trajectories/interval178/setLineColourRGBA 0.000 0.370 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval178/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval179 2.294 eV 2.299 eV
+/vis/modeling/trajectories/trajectories/interval179/setLineColourRGBA 0.000 0.350 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval179/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval180 2.299 eV 2.304 eV
+/vis/modeling/trajectories/trajectories/interval180/setLineColourRGBA 0.000 0.329 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval180/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval181 2.304 eV 2.309 eV
+/vis/modeling/trajectories/trajectories/interval181/setLineColourRGBA 0.000 0.309 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval181/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval182 2.309 eV 2.314 eV
+/vis/modeling/trajectories/trajectories/interval182/setLineColourRGBA 0.000 0.288 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval182/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval183 2.314 eV 2.319 eV
+/vis/modeling/trajectories/trajectories/interval183/setLineColourRGBA 0.000 0.268 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval183/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval184 2.319 eV 2.324 eV
+/vis/modeling/trajectories/trajectories/interval184/setLineColourRGBA 0.000 0.247 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval184/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval185 2.324 eV 2.329 eV
+/vis/modeling/trajectories/trajectories/interval185/setLineColourRGBA 0.000 0.227 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval185/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval186 2.329 eV 2.334 eV
+/vis/modeling/trajectories/trajectories/interval186/setLineColourRGBA 0.000 0.206 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval186/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval187 2.334 eV 2.339 eV
+/vis/modeling/trajectories/trajectories/interval187/setLineColourRGBA 0.000 0.186 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval187/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval188 2.339 eV 2.345 eV
+/vis/modeling/trajectories/trajectories/interval188/setLineColourRGBA 0.000 0.165 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval188/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval189 2.345 eV 2.350 eV
+/vis/modeling/trajectories/trajectories/interval189/setLineColourRGBA 0.000 0.145 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval189/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval190 2.350 eV 2.355 eV
+/vis/modeling/trajectories/trajectories/interval190/setLineColourRGBA 0.000 0.124 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval190/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval191 2.355 eV 2.360 eV
+/vis/modeling/trajectories/trajectories/interval191/setLineColourRGBA 0.000 0.104 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval191/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval192 2.360 eV 2.366 eV
+/vis/modeling/trajectories/trajectories/interval192/setLineColourRGBA 0.000 0.083 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval192/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval193 2.366 eV 2.371 eV
+/vis/modeling/trajectories/trajectories/interval193/setLineColourRGBA 0.000 0.062 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval193/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval194 2.371 eV 2.376 eV
+/vis/modeling/trajectories/trajectories/interval194/setLineColourRGBA 0.000 0.042 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval194/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval195 2.376 eV 2.382 eV
+/vis/modeling/trajectories/trajectories/interval195/setLineColourRGBA 0.000 0.021 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval195/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval196 2.382 eV 2.387 eV
+/vis/modeling/trajectories/trajectories/interval196/setLineColourRGBA 0.000 0.001 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval196/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval197 2.387 eV 2.392 eV
+/vis/modeling/trajectories/trajectories/interval197/setLineColourRGBA 0.020 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval197/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval198 2.392 eV 2.398 eV
+/vis/modeling/trajectories/trajectories/interval198/setLineColourRGBA 0.040 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval198/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval199 2.398 eV 2.403 eV
+/vis/modeling/trajectories/trajectories/interval199/setLineColourRGBA 0.061 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval199/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval200 2.403 eV 2.409 eV
+/vis/modeling/trajectories/trajectories/interval200/setLineColourRGBA 0.081 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval200/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval201 2.409 eV 2.414 eV
+/vis/modeling/trajectories/trajectories/interval201/setLineColourRGBA 0.102 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval201/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval202 2.414 eV 2.420 eV
+/vis/modeling/trajectories/trajectories/interval202/setLineColourRGBA 0.122 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval202/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval203 2.420 eV 2.425 eV
+/vis/modeling/trajectories/trajectories/interval203/setLineColourRGBA 0.143 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval203/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval204 2.425 eV 2.431 eV
+/vis/modeling/trajectories/trajectories/interval204/setLineColourRGBA 0.163 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval204/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval205 2.431 eV 2.437 eV
+/vis/modeling/trajectories/trajectories/interval205/setLineColourRGBA 0.184 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval205/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval206 2.437 eV 2.442 eV
+/vis/modeling/trajectories/trajectories/interval206/setLineColourRGBA 0.204 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval206/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval207 2.442 eV 2.448 eV
+/vis/modeling/trajectories/trajectories/interval207/setLineColourRGBA 0.225 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval207/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval208 2.448 eV 2.454 eV
+/vis/modeling/trajectories/trajectories/interval208/setLineColourRGBA 0.245 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval208/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval209 2.454 eV 2.459 eV
+/vis/modeling/trajectories/trajectories/interval209/setLineColourRGBA 0.266 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval209/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval210 2.459 eV 2.465 eV
+/vis/modeling/trajectories/trajectories/interval210/setLineColourRGBA 0.286 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval210/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval211 2.465 eV 2.471 eV
+/vis/modeling/trajectories/trajectories/interval211/setLineColourRGBA 0.307 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval211/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval212 2.471 eV 2.477 eV
+/vis/modeling/trajectories/trajectories/interval212/setLineColourRGBA 0.327 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval212/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval213 2.477 eV 2.483 eV
+/vis/modeling/trajectories/trajectories/interval213/setLineColourRGBA 0.348 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval213/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval214 2.483 eV 2.488 eV
+/vis/modeling/trajectories/trajectories/interval214/setLineColourRGBA 0.368 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval214/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval215 2.488 eV 2.494 eV
+/vis/modeling/trajectories/trajectories/interval215/setLineColourRGBA 0.389 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval215/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval216 2.494 eV 2.500 eV
+/vis/modeling/trajectories/trajectories/interval216/setLineColourRGBA 0.409 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval216/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval217 2.500 eV 2.506 eV
+/vis/modeling/trajectories/trajectories/interval217/setLineColourRGBA 0.430 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval217/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval218 2.506 eV 2.512 eV
+/vis/modeling/trajectories/trajectories/interval218/setLineColourRGBA 0.450 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval218/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval219 2.512 eV 2.518 eV
+/vis/modeling/trajectories/trajectories/interval219/setLineColourRGBA 0.471 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval219/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval220 2.518 eV 2.524 eV
+/vis/modeling/trajectories/trajectories/interval220/setLineColourRGBA 0.491 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval220/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval221 2.524 eV 2.530 eV
+/vis/modeling/trajectories/trajectories/interval221/setLineColourRGBA 0.512 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval221/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval222 2.530 eV 2.536 eV
+/vis/modeling/trajectories/trajectories/interval222/setLineColourRGBA 0.532 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval222/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval223 2.536 eV 2.542 eV
+/vis/modeling/trajectories/trajectories/interval223/setLineColourRGBA 0.553 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval223/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval224 2.542 eV 2.549 eV
+/vis/modeling/trajectories/trajectories/interval224/setLineColourRGBA 0.573 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval224/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval225 2.549 eV 2.555 eV
+/vis/modeling/trajectories/trajectories/interval225/setLineColourRGBA 0.594 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval225/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval226 2.555 eV 2.561 eV
+/vis/modeling/trajectories/trajectories/interval226/setLineColourRGBA 0.614 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval226/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval227 2.561 eV 2.567 eV
+/vis/modeling/trajectories/trajectories/interval227/setLineColourRGBA 0.635 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval227/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval228 2.567 eV 2.574 eV
+/vis/modeling/trajectories/trajectories/interval228/setLineColourRGBA 0.655 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval228/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval229 2.574 eV 2.580 eV
+/vis/modeling/trajectories/trajectories/interval229/setLineColourRGBA 0.676 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval229/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval230 2.580 eV 2.586 eV
+/vis/modeling/trajectories/trajectories/interval230/setLineColourRGBA 0.696 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval230/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval231 2.586 eV 2.593 eV
+/vis/modeling/trajectories/trajectories/interval231/setLineColourRGBA 0.717 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval231/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval232 2.593 eV 2.599 eV
+/vis/modeling/trajectories/trajectories/interval232/setLineColourRGBA 0.737 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval232/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval233 2.599 eV 2.605 eV
+/vis/modeling/trajectories/trajectories/interval233/setLineColourRGBA 0.758 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval233/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval234 2.605 eV 2.612 eV
+/vis/modeling/trajectories/trajectories/interval234/setLineColourRGBA 0.778 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval234/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval235 2.612 eV 2.618 eV
+/vis/modeling/trajectories/trajectories/interval235/setLineColourRGBA 0.799 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval235/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval236 2.618 eV 2.625 eV
+/vis/modeling/trajectories/trajectories/interval236/setLineColourRGBA 0.819 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval236/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval237 2.625 eV 2.631 eV
+/vis/modeling/trajectories/trajectories/interval237/setLineColourRGBA 0.840 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval237/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval238 2.631 eV 2.638 eV
+/vis/modeling/trajectories/trajectories/interval238/setLineColourRGBA 0.860 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval238/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval239 2.638 eV 2.645 eV
+/vis/modeling/trajectories/trajectories/interval239/setLineColourRGBA 0.881 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval239/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval240 2.645 eV 2.651 eV
+/vis/modeling/trajectories/trajectories/interval240/setLineColourRGBA 0.901 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval240/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval241 2.651 eV 2.658 eV
+/vis/modeling/trajectories/trajectories/interval241/setLineColourRGBA 0.922 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval241/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval242 2.658 eV 2.665 eV
+/vis/modeling/trajectories/trajectories/interval242/setLineColourRGBA 0.942 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval242/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval243 2.665 eV 2.671 eV
+/vis/modeling/trajectories/trajectories/interval243/setLineColourRGBA 0.963 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval243/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval244 2.671 eV 2.678 eV
+/vis/modeling/trajectories/trajectories/interval244/setLineColourRGBA 0.983 0.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval244/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval245 2.678 eV 2.685 eV
+/vis/modeling/trajectories/trajectories/interval245/setLineColourRGBA 1.000 0.000 0.996 1.0
+/vis/modeling/trajectories/trajectories/interval245/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval246 2.685 eV 2.692 eV
+/vis/modeling/trajectories/trajectories/interval246/setLineColourRGBA 1.000 0.000 0.976 1.0
+/vis/modeling/trajectories/trajectories/interval246/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval247 2.692 eV 2.699 eV
+/vis/modeling/trajectories/trajectories/interval247/setLineColourRGBA 1.000 0.000 0.955 1.0
+/vis/modeling/trajectories/trajectories/interval247/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval248 2.699 eV 2.706 eV
+/vis/modeling/trajectories/trajectories/interval248/setLineColourRGBA 1.000 0.000 0.935 1.0
+/vis/modeling/trajectories/trajectories/interval248/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval249 2.706 eV 2.713 eV
+/vis/modeling/trajectories/trajectories/interval249/setLineColourRGBA 1.000 0.000 0.914 1.0
+/vis/modeling/trajectories/trajectories/interval249/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval250 2.713 eV 2.720 eV
+/vis/modeling/trajectories/trajectories/interval250/setLineColourRGBA 1.000 0.000 0.894 1.0
+/vis/modeling/trajectories/trajectories/interval250/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval251 2.720 eV 2.727 eV
+/vis/modeling/trajectories/trajectories/interval251/setLineColourRGBA 1.000 0.000 0.873 1.0
+/vis/modeling/trajectories/trajectories/interval251/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval252 2.727 eV 2.734 eV
+/vis/modeling/trajectories/trajectories/interval252/setLineColourRGBA 1.000 0.000 0.853 1.0
+/vis/modeling/trajectories/trajectories/interval252/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval253 2.734 eV 2.741 eV
+/vis/modeling/trajectories/trajectories/interval253/setLineColourRGBA 1.000 0.000 0.832 1.0
+/vis/modeling/trajectories/trajectories/interval253/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval254 2.741 eV 2.748 eV
+/vis/modeling/trajectories/trajectories/interval254/setLineColourRGBA 1.000 0.000 0.812 1.0
+/vis/modeling/trajectories/trajectories/interval254/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval255 2.748 eV 2.755 eV
+/vis/modeling/trajectories/trajectories/interval255/setLineColourRGBA 1.000 0.000 0.791 1.0
+/vis/modeling/trajectories/trajectories/interval255/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval256 2.755 eV 1000.0 eV
+/vis/modeling/trajectories/trajectories/interval256/setLineColourRGBA 1.000 0.000 0.771 1.0
+/vis/modeling/trajectories/trajectories/interval256/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/addInterval interval257 1000.0 eV 2.0 MeV
+/vis/modeling/trajectories/trajectories/interval257/setLineColourRGBA 1.000 1.000 1.000 1.0
+/vis/modeling/trajectories/trajectories/interval257/setTimeSliceInterval 0.00010000 ns
+/vis/modeling/trajectories/trajectories/default/setTimeSliceInterval 0.00010000 ns
+/vis/filtering/trajectories/create/particleFilter
+/vis/filtering/trajectories/particleFilter-0/add e-
+/vis/filtering/trajectories/particleFilter-0/add opticalphoton  
+/vis/modeling/trajectories/list
+
+/run/beamOn 1
+
+/vis/viewer/set/projection perspective 20
+/vis/viewer/set/viewpointThetaPhi 40 10
+/vis/viewer/set/lineSegmentsPerCircle 120
+/control/alias timeRange 0.01
+/control/alias dz 1
+/control/alias dx 0
+/vis/viewer/zoomTo 1.0
+/control/loop movie.loop endTime 0 0.1 0.0002

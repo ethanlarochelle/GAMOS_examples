@@ -1,0 +1,1 @@
+In this example the OpenGL visualization format is used.  This will render live visualization of the example using an OpenGL window.

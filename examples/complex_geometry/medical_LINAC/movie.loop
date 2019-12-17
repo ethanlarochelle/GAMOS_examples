@@ -1,0 +1,5 @@
+/vis/viewer/pan {dx} 0 mm
+/vis/viewer/zoom {dz}
+/vis/ogl/set/endTime {endTime} ns {timeRange} ns
+#/vis/viewer/refresh
+/vis/ogl/printEPS

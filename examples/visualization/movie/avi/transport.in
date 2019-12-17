@@ -1,0 +1,19 @@
+/control/verbose 0
+/gamos/setParam GmGeometryFromText:FileName viz.geom
+/gamos/geometry GmGeometryFromText
+/gamos/physicsList GmEMPhysics
+/gamos/generator GmGenerator
+/run/initialize
+/gamos/setParam GmPhysicsCerenkov:TrackSecondariesFirst 1
+/gamos/setParam GmPhysicsCerenkov:MaxNumPhotonsPerStep 20.
+/gamos/setParam G4OpCerenkov:Method interpolate
+/gamos/physics/addPhysics tissue-optics
+/gamos/physics/addPhysics cerenkov
+
+/gamos/generator/addSingleParticleSource mySource e- 18.0*MeV
+/gamos/generator/directionDist mySource GmGenerDistDirectionConst 1 0 0
+/gamos/generator/positionDist mySource GmGenerDistPositionPoint -7 0 0 
+/gamos/physics/userLimits/setMinEKin UL1 * e- 1.*keV
+
+/control/execute OGL.in
+

@@ -1,0 +1,31 @@
+/gamos/random/setSeeds 1000 1000
+/gamos/setParam GmAnalysisMgr:FileNameSuffix _test
+/gamos/setParam GmGeometryFromText:FileName world.geom
+/gamos/setParam GmGeometryFromText:FileNameParallel parallel_world.geom 1
+/gamos/geometry GmGeometryFromText
+
+/gamos/physicsList GmEMPhysics
+
+/gamos/generator GmGenerator
+/run/initialize
+/gamos/generator/addSingleParticleSource MySource opticalphoton 600*wvnm
+/gamos/generator/positionDist MySource GmGenerDistPositionPoint 0.*mm 0.*mm 30.*mm
+/gamos/generator/directionDist MySource GmGenerDistDirectionConst 0. 0. -1.
+
+/gamos/physics/addPhysics tissue-optics
+/gamos/physics/addParallelProcess
+
+/gamos/scoring/createMFDetector detector voxel
+/gamos/scoring/addScorer2MFD source_fluence_scorer GmPSTrackLengthFluence detector
+/gamos/setParam source_fluence_printer:PrintHeader FALSE
+/gamos/scoring/printer source_fluence_printer GmPSPrinterCSVFile
+/gamos/scoring/addPrinter2Scorer source_fluence_printer source_fluence_scorer
+/gamos/setParam source_fluence_printer.csv:FileName fluence.csv
+/gamos/scoring/scoreErrors source_fluence_scorer TRUE
+/gamos/scoring/printByEvent source_fluence_scorer TRUE
+
+/gamos/userAction GmCountProcessesUA
+/gamos/userAction GmCountTracksUA
+/gamos/setParam GmCountTracksUA:EachNEvent 10000
+
+/run/beamOn 100000

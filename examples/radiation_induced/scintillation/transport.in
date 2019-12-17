@@ -1,0 +1,32 @@
+/gamos/analysis/addFileFormat csv
+
+/gamos/setParam GmGeometryFromText:FileName world.geom
+/gamos/geometry GmGeometryFromText
+
+/gamos/physicsList GmEMPhysics
+
+/gamos/generator GmGenerator
+/run/initialize
+
+/gamos/generator/addSingleParticleSource mySource opticalphoton 600*wvnm
+/gamos/generator/energyDist mySource GmGenerDistWavelengthRandomFlat 400*wvnm 900*wvnm
+/gamos/setParam G4OpScintillation:Method interpolate
+/gamos/physics/addPhysics scintillation
+/gamos/physics/addPhysics tissue-optics
+
+/gamos/filter creator_filter GmPrimaryFilter
+/gamos/setParam GmStepDataHistosUA_creator_filter:DataList WavelengthEnergy*nm.vs.(InitialDirX*FinalDirX+InitialDirY*FinalDirY+InitialDirZ*FinalDirZ)/(sqrt(InitialDirX*InitialDirX+InitialDirY*InitialDirY+InitialDirZ*InitialDirZ)*sqrt(FinalDirX*FinalDirX+FinalDirY*FinalDirY+FinalDirZ*FinalDirZ))
+/gamos/analysis/histo2NBinsX * 500
+/gamos/analysis/histo2MinX * 400.
+/gamos/analysis/histo2MaxX * 900.
+/gamos/analysis/histo2NBinsY * 360
+/gamos/analysis/histo2MinY * -1
+/gamos/analysis/histo2MaxY * 1
+/gamos/userAction GmStepDataHistosUA creator_filter
+
+/gamos/userAction GmCountProcessesUA
+/gamos/userAction GmCountTracksUA
+/gamos/setParam GmCountTracksUA:EachNEvent 100
+
+/run/beamOn 10000
+

@@ -1,0 +1,4 @@
+400*wvnm 1.0
+500*wvnm 1.0
+900*wvnm 1.0
+:ENDFILE

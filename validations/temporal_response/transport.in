@@ -1,0 +1,30 @@
+/gamos/analysis/fileFormat csv
+/gamos/random/setSeeds 1000 1000
+/gamos/setParam GmAnalysisMgr:FileNameSuffix _test
+/gamos/setParam GmGeometryFromText:FileName world.geom
+/gamos/geometry GmGeometryFromText
+
+/gamos/physicsList GmEMPhysics
+
+/gamos/generator GmGenerator
+/run/initialize
+/gamos/generator/addSingleParticleSource MySource opticalphoton 600*wvnm
+/gamos/generator/positionDist MySource GmGenerDistPositionPoint 0.*mm 0.*mm 30.*mm
+/gamos/generator/directionDist MySource GmGenerDistDirectionConst 0. 0. -1.
+
+/gamos/physics/addPhysics tissue-optics
+
+/gamos/filter f1 GmEnterLogicalVolumeFilter temporal
+/gamos/setParam GmStepDataHistosUA_f1:FileName time_response
+/gamos/userAction GmStepDataHistosUA f1
+/gamos/setParam GmStepDataHistosUA_f1:DataList InitialTime*ns
+
+/gamos/analysis/histo1NBins *f1 50
+/gamos/analysis/histo1Min *f1 0*ns
+/gamos/analysis/histo1Max *f1 5*ns
+
+/gamos/userAction GmCountProcessesUA
+/gamos/userAction GmCountTracksUA
+/gamos/setParam GmCountTracksUA:EachNEvent 10000
+
+/run/beamOn 100000

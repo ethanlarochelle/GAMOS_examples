@@ -1,0 +1,28 @@
+/gamos/analysis/addFileFormat csv
+
+/gamos/setParam GmGeometryFromText:FileName world.geom
+/gamos/geometry GmGeometryFromText
+
+/gamos/physicsList GmEMPhysics
+
+/gamos/generator GmGenerator
+/run/initialize
+
+/gamos/generator/addSingleParticleSource mySource opticalphoton 600*wvnm
+/gamos/generator/energyDist mySource GmGenerDistWavelengthRandomFlat 400*wvnm 900*wvnm
+
+/gamos/physics/addPhysics tissue-optics
+
+/gamos/filter creator_filter GmPrimaryFilter
+/gamos/setParam GmStepDataHistosUA_creator_filter:DataList (InitialDirX*FinalDirX+InitialDirY*FinalDirY+InitialDirZ*FinalDirZ)/(sqrt(InitialDirX*InitialDirX+InitialDirY*InitialDirY+InitialDirZ*InitialDirZ)*sqrt(FinalDirX*FinalDirX+FinalDirY*FinalDirY+FinalDirZ*FinalDirZ))
+/gamos/analysis/histo1NBins *filter 20000
+/gamos/analysis/histo1Min *filter -1
+/gamos/analysis/histo1Max *filter 1
+/gamos/userAction GmStepDataHistosUA creator_filter
+
+/gamos/userAction GmCountProcessesUA
+/gamos/userAction GmCountTracksUA
+/gamos/setParam GmCountTracksUA:EachNEvent 100
+
+/run/beamOn 10000
+

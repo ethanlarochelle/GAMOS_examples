@@ -1,0 +1,24 @@
+/gamos/setParam GmGeometryFromText:FileName world.geom
+/gamos/geometry GmGeometryFromText
+#/gamos/verbosity GmGenerVerbosity 4
+
+/gamos/physicsList GmEMPhysics
+
+/gamos/generator GmGenerator
+/run/initialize
+
+/gamos/generator/addSingleParticleSource mySource opticalphoton 600*wvnm
+/gamos/generator/energyDist mySource GmGenerDistWavelengthFromFile source_spectrum.txt fixed
+#/gamos/generator/energyDist mySource GmGenerDistWavelengthRandomFlat 600*wvnm 800*wvnm
+
+
+/gamos/setParam G4OpTissueFluor:Method fixed
+/gamos/setParam G4OpTissueFluor:TimeProfile delta
+/gamos/physics/addPhysics tissue-optics
+
+/gamos/userAction GmCountProcessesUA
+/gamos/userAction GmCountTracksUA
+/gamos/setParam GmCountTracksUA:EachNEvent 100
+
+/run/beamOn 10000
+
